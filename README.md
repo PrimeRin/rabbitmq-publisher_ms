@@ -64,6 +64,6 @@ The Publisher Microservice exposes the following endpoint:
 ## Docker Setup
 To run RabbitMQ in a Docker container locally, you can use the following command:
 ```angular2html
-docker run -d --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:management
+docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.12-management
 ```
 This command will start a RabbitMQ container with the management plugin enabled, allowing you to access the RabbitMQ web management interface at http://localhost:15672.
